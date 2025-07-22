@@ -91,7 +91,7 @@ Slecione uma imagem (AMI) Linux e uma versão LTS
 ![Tipo de Instância EC2](images/ec2-instance-type.PNG)
 
 ![Key Pair](images/ec2-key-pair.PNG)
-> Caso não tenha uma key pair, crie e armazene em C:\Users\seu_usuário\.ssh
+> Caso não tenha uma key pair, crie e armazene em C:\Users\seu_usuário\\.ssh
 
 
 Em Network Settings, clique em edit no canto superior direito > selecione a sua VPC e altere para a sub-rede pública de sua preferência:
@@ -104,11 +104,12 @@ Em Network Settings, clique em edit no canto superior direito > selecione a sua 
 
 ![Security Group](images/ec2-security-group.PNG)
 
-# Configuração do Servidor
+# Configuração do Servidor (User Data)
 
 >Para prosseguir faça o download do arquivo [init.sh](scripts/init.sh)
 
-Na seção "Advanced Details", localize o campo "User data" > Choose file > selecione o arquivo instalado anteriormente:
+Na seção "Advanced Details", localize o campo "User data" > Choose file > selecione o arquivo init.sh:
+
 ![User Data](images/ec2-user-data.PNG)
 
 ⚠️ **Nota:** Lembre de alterar a variável DISCORD_WEBHOOK="LINK_DO_SEU_WEEBHOOK"!
