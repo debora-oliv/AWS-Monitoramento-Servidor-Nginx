@@ -8,7 +8,7 @@ Criar uma VPC com com 2 sub-redes públicas e 2 privadas, configurar uma instân
 # Índice
 - [Configuração do ambiente](#configuração-ambiente)
 - [Criação da Instância EC2](#criação-da-instância-EC2)
-- [Configuração do Servidor](#configuração-do-servidor)
+- [Configuração do Servidor](#configuração-do-servidor-user-data)
 
 # Configuração do ambiente
 
