@@ -1,0 +1,15 @@
+[Unit]
+Description=Serviço de Monitoramento do Servidor Nginx
+After=nginx.service
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/nginx-monitoramento-secrets.env
+ExecStart=/usr/local/bin/nginx_monitoramento.sh
+Restart=always
+RestartSec=30
+User=root
+
+[Install]
+WantedBy=multi-user.target
+EOF
